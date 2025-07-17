@@ -1,0 +1,284 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+  font-family: "Alice", serif;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+.navbar-links{
+    display: flex;
+    column-gap: 20px;
+
+}
+.navbar-links a{
+    text-decoration: none;
+    color: #1D232c;
+}
+.navbar-links a:hover{
+    text-decoration: underline;
+    color: #1D232c;
+}
+.navbar-menu-toggle{
+    display: none;
+}
+.side-navbar{
+    background-color: #1D232c;
+    width: 50%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: -70%;
+    padding: 20px;
+    color: white;
+    transition: 1s;
+}
+.side-navbar-link{
+    margin-bottom: 30px;
+}
+.side-navbar-links a{
+    text-decoration: none;
+    color: white;
+}
+
+.side-navbar-links a:hover{
+    text-decoration: underline;
+    color: white;
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding: 50px;
+    font-size: 200%;
+}
+
+.header-button{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 10px;
+    background-color: #1D232c;
+    color: white;
+    cursor: pointer;
+}
+.video-1{
+    border-radius: 10px;
+    width: 500px;
+    height: 300px;
+}
+.video-2{
+    border-radius: 10px;
+    display: none;
+}
+.video-4{
+    border-radius: 10px;
+    display: none;
+}
+.service{
+    padding: 20px;
+}
+
+.service-container
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.service-container-2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.service-container-2 div{
+    background-color: #f2f4f7;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.new-launch-1{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.new-launch-container{
+    position: relative;
+    flex-basis: 20%;
+
+}
+.new-launch-1 img{
+    padding: 5px;
+    border-radius: 15px;
+    height: 300px;
+}
+
+.new-launch-1 button{
+    padding-left: 4%;
+    padding-right: 4%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    margin-top: 10px;
+    font-size: 0.8em;
+    color: #1D232c;
+    border-radius: 10px;
+}
+
+.news{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.news input{
+    padding: 11px;
+    width: 80vw;
+    margin-bottom: 10px;
+    border: solid black 3px;
+}
+
+.news button{
+    margin-top: 10px;
+    color: #f2f4f7;
+    background-color: #1D232c;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.footer{
+    margin-top: 20px;
+    padding: 40px;
+    background-color: #1D232c;
+    color: white;
+}
+
+.product-section{
+    margin-top: 20px;
+}
+
+.product-search{
+    width: 80%;
+    border: solid black 2px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin: auto;
+}
+
+.product-search input{
+    border: none;
+    background-color: transparent;
+    width: 100%;
+}
+
+.product-search input:focus{
+    outline: none;
+}
+
+.product{
+    padding: 20px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.product-box{
+    text-align: center;
+    flex-basis: 20%;
+}
+
+.product-box img{
+    border-radius: 10px;
+}
+
+.contact-us{
+    margin: auto;
+    width: 505px;
+    height: 400px;
+    border-radius: 10px;
+    padding: 50px;
+    background-color: #1D232c;
+    color: white;
+}
+
+.contact-us h1{
+    margin-bottom: 25px;
+    text-align: center;
+    text-decoration-line: underline;
+    color: lightblue;
+}
+
+.contact-us label{
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.contact-us input{
+    padding-left: 10px;
+    width: 500px;
+    height: 40px;
+    border-radius: 10px;
+}
+
+.contact-us textarea{
+    padding-left: 10px;
+    width: 500px;
+    height: 100px;
+    border-radius: 10px;
+}
+
+.contact-us button{
+    margin-top: 10px;
+    background-color: #1D232c;
+    color: white;
+    padding: auto;
+    font-size: 15px;
+}
+
+@media screen and (max-width: 700px){
+    .navbar-menu-toggle{
+    display: block;
+}
+.navbar-links{
+    display: none;
+}
+.video-1{
+    display: none;
+}
+.video-2{
+    display: block;
+}
+.video-3{
+    display: none;
+}
+.video-4{
+    display: block;
+}
+.service-container{
+    display: none;
+}
+.service-container-2{
+    flex-direction: column;
+}
+}
+
+    
