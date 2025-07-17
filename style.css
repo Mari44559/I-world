@@ -279,6 +279,10 @@ body{
 .service-container-2{
     flex-direction: column;
 }
+.contact-us{
+    width: auto;
+    height: auto;
+}
 }
 
     
